@@ -1,0 +1,230 @@
+body{
+    background: #171616;
+    margin: 0;
+    overflow-x: hidden;
+}
+main{
+    background: linear-gradient(180deg, #321435 0%, #A141A9 5%, rgba(23, 22, 22, 0.00) 100%);
+}
+header{
+    width: 100vw;
+    height: 103px;
+    background-color: #EBEBEB;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 317px;
+    flex-wrap: wrap;
+}
+.logo-vw{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 62px;
+}
+
+.logo-vw>img{
+    width: 70px;
+    height: 70px;
+}
+.logo-vw>p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 39.2px */
+}
+header>div:nth-child(2n){
+    display: inline-flex;
+    height: 32px;
+    align-items: flex-start;
+    gap: 75px;
+}
+header>div:nth-child(2n)>a:first-child{
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    text-decoration: none;
+}
+header>div:nth-child(2n)>a:nth-child(n+2){
+    color: #7F3F8A;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    text-decoration: none;
+}
+header>div:nth-child(2n)>a:nth-child(n+3){
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    text-decoration: none;
+}
+header>img{
+    width: 30px;
+    height: 27px;
+    margin-right: 63px;
+}
+.sec1{
+    height: 80vh;
+
+}
+.bcg{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.sec1>div{
+}
+.info-img{
+    position: absolute;
+    top: 70%;
+    margin-left: 55px;
+}
+.info-img>p{
+    color: #FFF;
+    text-align: center;
+    font-family: Ruda, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info-img>div{
+
+}
+.info-img>div>button{
+    width: 133px;
+    height: 51px;
+    border-radius: 5px;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: Ruda, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+.sec2{
+    height: 55vh;
+}
+.table{
+    color: #FFF;
+    text-align: center;
+    font-family: Ruda, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 693px;
+    margin-left: 128px;
+    margin-right: 149px;
+}
+.group-left{
+    display: flex;
+    width: 260px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 11px 66px;
+    flex-wrap: wrap;
+}
+.group-right{
+    display: flex;
+    width: 208px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 11px 25px;
+    flex-wrap: wrap;
+}
+.text>p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.group1{
+    display: flex;
+    align-items: flex-start;
+    gap: 105px;
+}
+.group2{
+    display: flex;
+    align-items: flex-start;
+    gap: 103px;
+}
+.group3{
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+.group4{
+    display: flex;
+    align-items: flex-start;
+    gap: 116px;
+}
+.group5{
+    display: flex;
+    align-items: flex-start;
+    gap: 114px;
+}
+.group6{
+    display: flex;
+    align-items: flex-start;
+    gap: 99px;
+}
+.group7{
+    display: flex;
+    align-items: flex-start;
+    gap: 66px;
+}
+.group8{
+    display: flex;
+    align-items: flex-start;
+    gap: 68px;
+}
+.group9{
+    display: flex;
+    align-items: flex-start;
+    gap: 68px;
+}
+.group10{
+    display: flex;
+    align-items: flex-start;
+    gap: 63px;
+}
+.group11{
+    display: flex;
+    align-items: flex-start;
+    gap: 67px;
+}
+.photo{
+    display: inline-flex;
+    align-items: center;
+    gap: 61px;
+}
+.rectangle{
+    height: 20vh;
+    background: #FFF;
+    position: relative;
+    z-index: -1;
+    bottom: 100px;
+}
+
+.sec3{
+    height: 70vh;
+}

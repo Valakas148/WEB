@@ -109,6 +109,7 @@ header>img{
 .bcg-img>div>div{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     gap: 76px;
 
 }
@@ -125,6 +126,7 @@ header>img{
 }
 .bcg-img>div>div>button{
     border-radius: 10px;
+    cursor: pointer;
     background: #151515;
     color: #FFF;
     font-family: Ruda,sans-serif;
@@ -132,10 +134,14 @@ header>img{
     font-style: normal;
     font-weight: 500;
     line-height: 140%; /* 33.6px */
+    border: white;
+    height: 50px;
+    width: 120px;
 }
 .second-section{
     height: 70vh;
     background: linear-gradient(328deg, rgba(150, 117, 191, 0.52) -3.84%, rgba(23, 22, 22, 0.00) 41.43%);
+    width: 100vw;
 }
 .second-section>div>div:first-child>p{
     color: #FFF;
@@ -147,9 +153,9 @@ header>img{
     margin-left: 62px;
 }
 .second-section>div>div:nth-child(2n){
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 227px;
+    justify-content: space-between;
 }
 .second-section>div>div:nth-child(2n)>img{
     width: 400px;
@@ -162,6 +168,12 @@ header>img{
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 32px */
+    margin-right: 110px;
+}
+.second-section>div>div:nth-child(n+3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .second-section>div>div:nth-child(n+3)>p{
     color: #FFF;
@@ -171,17 +183,21 @@ header>img{
     font-weight: 500;
     line-height: 70px; /* 218.75% */
     margin-top: 120px;
-    position: relative;
-    left: 30%;
+
 }
 .third-section{
     background: linear-gradient(103deg, rgba(150, 117, 191, 0.50) 47.01%, rgba(106, 93, 123, 0.00) 59.24%);
     height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
 }
 .third-section>div{
     display: flex;
     align-items: center;
-    gap: 225px;
+    justify-content: space-between;
+    width: 100vw;
+
 }
 .third-section>div>div{
     display: inline-flex;
@@ -209,8 +225,10 @@ header>img{
 .form-div{
     height: 81px;
 }
-#submit{
+
+input[type="submit"]{
     border-radius: 20px;
+    border: white;
     background: #8B709F;
     color: #FFF;
     font-family: Roboto, sans-serif;
@@ -220,11 +238,14 @@ header>img{
     line-height: 70px; /* 291.667% */
     width: 153px;
     height: 81px;
+    position: relative;
+    right: 140px;
 }
-#text{
+input[type="text"]{
     border-radius: 10px;
     background: #3F3F3F;
     color: #FFF;
+    border: white;
     font-family: Roboto, sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -233,7 +254,40 @@ header>img{
     width: 519px;
     height: 70px;
 }
-.form-3sec{
-
+footer{
+    background: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer>div:nth-child(2n)>p:first-child{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 39.2px */
+}
+footer>div:nth-child(2n)>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+footer>div:nth-child(2n)>div>p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    width: 200px;
+}
+footer>img{
+    width: 319px;
+    height: 259px;
+    margin-right: 62px;
 }
 
