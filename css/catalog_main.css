@@ -77,7 +77,7 @@ header>img{
 }
 section{
     background: #171616;
-    height: 135vh;
+    height: 150vh;
 }
 section>div{
     display: flex;
@@ -114,8 +114,8 @@ section>div{
     flex-shrink: 0;
 }
 
-.capacity>span {
-    color: var(--Secondary-400, #596780);
+.brand>form>label>span{
+    color: #596780;
     text-align: justify;
     font-family: Ruda,sans-serif;
     font-size: 20px;
@@ -125,6 +125,22 @@ section>div{
     letter-spacing: -0.4px;
     margin-left: 5px; /* Додано для відступу між квадратом і текстом */
 }
+.body>form>label>span{
+    color: #596780;
+    text-align: justify;
+    font-family: Ruda,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.4px;
+    margin-left: 0; /* Додано для відступу між квадратом і текстом */
+}
+.body>form{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .text{
     color: #000;
     font-family: Ruda, sans-serif;
@@ -132,6 +148,16 @@ section>div{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.text-price{
+    color: var(--Secondary-400, #596780);
+    text-align: justify;
+    font-family: Ruda;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 15px */
+    letter-spacing: -0.2px;
 }
 .hr-filt{
     width: 239px;
@@ -241,6 +267,7 @@ section>div{
     line-height: normal;
     border: none;
     margin-top: 90px;
+    cursor: pointer;
 }
 footer{
     height: 20vh;
@@ -290,7 +317,9 @@ footer>div{
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.hr-filt-media{
+    display: none;
+}
 
 
 

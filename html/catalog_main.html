@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/css/catalog_main.css" >
+    <link rel="stylesheet" href="/css/media_catalog_main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
         <div class="filter">
             <div class="brand">
                 <p class="text">Brand</p>
-                <hr class="hr-filt">
+                <hr class="hr-filt hr-filt-pc">
                 <form>
                     <label for="Audi">
                         <input type="checkbox" id="Audi" name="Audi" class="capacity">
@@ -47,9 +48,10 @@
                     </label>
                 </form>
             </div>
+            <hr class="hr-filt hr-filt-media">
             <div class="body">
                 <p class="text">Body Type</p>
-                <hr class="hr-filt">
+                <hr class="hr-filt hr-filt-pc">
                 <form>
                     <label for="SUV">
                         <input type="checkbox" id="SUV" name="SUV" class="capacity">
@@ -77,11 +79,14 @@
                     </label>
                 </form>
             </div>
+            <hr class="hr-filt hr-filt-media">
             <div class="price">
                 <p class="text">Price</p>
-                <hr class="hr-filt">
-                <div></div>
-                <p>Max. $120.000</p>
+                <hr class="hr-filt hr-filt-pc">
+                <div>
+                    <img class="price-img" src="/svg/PRICERANGE.svg">
+                    <p class="text-price">Max. $120.000</p>
+                </div>
             </div>
         </div>
 

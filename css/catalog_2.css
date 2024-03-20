@@ -79,8 +79,8 @@ header>img{
     margin-right: 63px;
 }
 .sec1{
-    height: 80vh;
-
+    height: 120vh;
+    position: relative;
 }
 .bcg{
     width: 100%;
@@ -91,8 +91,14 @@ header>img{
 }
 .info-img{
     position: absolute;
-    top: 70%;
+    bottom: 5%; /* Змінено top на 0, щоб прикріпити .info-img до верхньої межі .sec1 */
+    left: 0; /* Додано left на 0, щоб прикріпити .info-img до лівої межі .sec1 */
+    padding: 20px; /* Додано відступи для кращого візуального вигляду */
+    box-sizing: border-box; /* Змінено box-sizing на border-box, щоб padding не впливав на ширину .info-img */
+    text-align: center; /* Центрування тексту всередині .info-img */
     margin-left: 55px;
+    width: auto;
+    margin-bottom: 50px;
 }
 .info-img>p{
     color: #FFF;
@@ -119,9 +125,11 @@ header>img{
     font-weight: 400;
     line-height: normal;
     border: none;
+    cursor: pointer;
 }
 .sec2{
-    height: 55vh;
+    height: 65vh;
+    margin-bottom: 100px;
 }
 .table{
     color: #FFF;
@@ -131,11 +139,15 @@ header>img{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 693px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50%;
+    align-items: center;
     margin-left: 128px;
     margin-right: 149px;
+    text-decoration: underline;
+    position: relative;
+    top: 50px;
 }
 .group-left{
     display: flex;
@@ -213,8 +225,9 @@ header>img{
     gap: 67px;
 }
 .photo{
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 61px;
 }
 .rectangle{
@@ -225,6 +238,138 @@ header>img{
     bottom: 100px;
 }
 
+
+
+
 .sec3{
     height: 70vh;
 }
+.sec3>div{
+    display: flex;
+    height: 508px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+}
+.up-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.up-block>p{
+    color: #FFF;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 32.4px */
+    text-transform: capitalize;
+}
+.hr-block{
+    width: 464px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr-block>hr{
+    width: 464px;
+    height: 1px;
+    background: #D3D5E0;
+}
+.hr-block>div{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--background-bg, #F8F8F8);
+}
+.hr-block>div>p{
+    color: var(--main-dark, #100E34);
+    text-align: center;
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 43.2px */
+    text-transform: capitalize;
+}
+.three-blocks{
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+}
+.block{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 15px;
+    background: var(--main-white, #FFFFFE);
+
+    /* shadow */
+    box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.04);
+}
+.up-text{
+    color: var(--main-dark, #100E34);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 28.8px */
+    text-transform: capitalize;
+}
+.down-text{
+    width: 262px;
+    color: var(--Gray-Gray-4, #666872);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; /* 28.8px */
+    text-transform: capitalize;
+}
+footer{
+    background: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer>div:nth-child(2n)>p:first-child{
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 39.2px */
+    margin-bottom: 0;
+}
+footer>div:nth-child(2n)>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+footer>div:nth-child(2n)>div>p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    width: 200px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.map{
+    width: 237px;
+    height: 148px;
+    margin-right: 62px;
+}
+
