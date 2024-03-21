@@ -12,9 +12,159 @@ header{
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    gap: 317px;
     flex-wrap: wrap;
 }
+/*
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger-menu {
+    width: 42px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+*/
+
+.hamburger-menu {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin-left: 62px;
+    margin-top: 10px;
+}
+
+.hamburger-menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger-menu span:nth-child(2), .hamburger-menu span:nth-child(3) {
+    top: 9px;
+}
+
+.hamburger-menu span:nth-child(4) {
+    bottom: 0;
+}
+
+.hamburger-menu input {
+    display: none;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu input:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger-menu input:checked ~ .menu {
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 10px 10px 20px;
+    background-color: #EBEBEB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.menu li:last-child {
+    margin-bottom: 0;
+}
+.menu>li:first-child>a:first-child{
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+}
+.menu>li:nth-child(n+2)>a:first-child{
+    color: #000;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+}
+
+
 .logo-vw{
     display: inline-flex;
     align-items: center;
@@ -35,20 +185,20 @@ header{
     font-weight: 500;
     line-height: 140%; /* 39.2px */
 }
-header>div:nth-child(2n){
+/*header>div:nth-child(2n){
     display: inline-flex;
-    height: 32px;
+    height: 32.729px;
     align-items: flex-start;
     gap: 75px;
 }
 header>div:nth-child(2n)>a:first-child{
-    color: #000;
+    color: #7F3F8A;
     text-align: center;
     font-family: Roboto, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 28px */
+    line-height: 140%; !* 28px *!
     text-decoration: none;
 }
 header>div:nth-child(2n)>a:nth-child(n+2){
@@ -58,19 +208,9 @@ header>div:nth-child(2n)>a:nth-child(n+2){
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 28px */
+    line-height: 140%; !* 28px *!
     text-decoration: none;
-}
-header>div:nth-child(2n)>a:nth-child(n+3){
-    color: #000;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 28px */
-    text-decoration: none;
-}
+}*/
 header>img{
     width: 30px;
     height: 27px;
